@@ -146,7 +146,6 @@ body {
     background: #f0f0f0;
     border-radius: 8px;
     height: 30%;
-    /* min-height: 400px; */
     overflow: hidden;
 }
 .img-container img {
@@ -172,7 +171,7 @@ body {
     margin: 0 auto;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .location-container {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -184,5 +183,38 @@ body {
 
     .map-container iframe {
         height: 300px;
+    }
+} */
+
+@media (max-width: 768px) {
+    .location {
+        padding: 2rem 1rem;
+        height: auto;
+    }
+
+    .location-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .location-info {
+        padding: 1.5rem;
+        height: auto;
+    }
+
+    .map-container {
+        min-height: 250px;
+    }
+
+    .map-container iframe {
+        height: 250px;
+    }
+
+    .img-container {
+        height: auto;
+    }
+
+    .img-container img {
+        height: auto;
     }
 }
