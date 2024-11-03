@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elegant Signets - Handcrafted Quality</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header class="header">
@@ -31,31 +32,37 @@
                 <img src="./images/pechat.jpg" alt="Classic Signet Ring">
                 <h3>Pechat(alohida)</h3>
                 <p>Traditional design with modern craftsmanship</p>
+                <button class="modal-button" onclick="openModal(this)">Ko'proq ma'lumot</button>
             </div>
             <div class="product-card">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1MTif6QNAsUww69uFdj2P_H-wwTO29YsgQA&s" alt="Family Crest Signet">
                 <h3>Shtamp(alohida)</h3>
                 <p>Preserve your family heritage</p>
+                <button class="modal-button" onclick="openModal(this)">Ko'proq ma'lumot</button>
             </div>
             <div class="product-card">
                 <img src="./images/pechat&shtamp.jpg" alt="Modern Signet">
                 <h3>Pechat va shtamp (birgalikda)</h3>
                 <p>Contemporary designs for the modern individual</p>
+                <button class="modal-button" onclick="openModal(this)">Ko'proq ma'lumot</button>
             </div>
             <div class="product-card">
                 <img src="./images/photo1.jpg" alt="Modern Signet">
                 <h3>Avtostnastka pechat</h3>
                 <p>Contemporary designs for the modern individual</p>
+                <button class="modal-button" onclick="openModal(this)">Ko'proq ma'lumot</button>
             </div>
             <div class="product-card">
                 <img src="/api/placeholder/300/200" alt="Modern Signet">
                 <h3>Rekvizit pechat</h3>
                 <p>Contemporary designs for the modern individual</p>
+                <button class="modal-button" onclick="openModal(this)">Ko'proq ma'lumot</button>
             </div>
             <div class="product-card">
                 <img src="/api/placeholder/300/200" alt="Modern Signet">
                 <h3>Shifokor pechati</h3>
                 <p>Contemporary designs for the modern individual</p>
+                <button class="modal-button" onclick="openModal(this)">Ko'proq ma'lumot</button>
             </div>
         </div>
 
@@ -103,7 +110,7 @@
 
     <section id="contact" class="contact">
         <div class="contact-info">
-            <h2>Bog'lanish uchun 1</h2>
+            <h2>Bog'lanish uchun</h2>
             <!-- <p>We're here to help you create the perfect signet</p> -->
             <p>📞 Telefon: +998 91 277 79 76</p>
             <p>📍 Manzil: Mustaqillik ko'chasi, 2-uy (Kengashlar uyi), 1-qavat</p>
@@ -117,5 +124,13 @@
     <footer class="footer">
         <p>&copy; 2024 To'qin servis x/k.</p>
     </footer>
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="Product Image">
+            <h3 id="modalTitle"></h3>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
 </body>
 </html>
